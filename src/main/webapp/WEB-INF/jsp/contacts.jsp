@@ -25,8 +25,7 @@
 						<td><a href="http://twitter.com/${contact.getField("twitterhandle__c").value}">${contact.getField("twitterhandle__c").value}</a></td>
 						<td><a href="#"
 							onClick="SFDC.deleteSObjectRecord(	'${contact.metadata.name}', 
-                            													'${contact.getField("
-							id").value}', 
+                            													'${contact.getField("id").value}', 
                             													'${contact.getField("firstname").value}, ${contact.getField("lastname").value}')"
                             		class="btn btn-danger btn-mini">Delete</a>
 							</form></td>
