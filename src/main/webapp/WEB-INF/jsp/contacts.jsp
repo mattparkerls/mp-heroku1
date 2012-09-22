@@ -2,47 +2,44 @@
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
-<jsp:include page="header.jsp"/>
-    <div class="row">
-        <div class="span8 offset2">
-                <table class="table table-bordered table-striped">
-                    <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Twitter</th>
-                        <th>&nbsp;</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    
-                    <c:forEach items="${contactList}" var="contact">
-                        <tr>
-                            <td>
-                            	<a href="contacts/${contact.getField("id").value}">
-                            		${contact.getField("lastname").value}, ${contact.getField("firstname").value}
-                            	</a>
-                            </td>
-                            <td>${contact.getField("email").value}</td>
-                            <td><a href="http://twitter.com/${contact.getField("twitterhandle__c").value}">${contact.getField("twitterhandle__c").value}</a></td>
-                            <td>
-                            	
-                            	<a href="#" onClick="SFDC.deleteSObjectRecord(	'${contact.metadata.name}', 
-                            													'${contact.getField("id").value}', 
-                            													'${contact.getField("firstname").value} ${contact.getField("lastname").value}')"
+<jsp:include page="header.jsp" />
+<div class="row">
+	<div class="span8 offset2">
+		<table class="table table-bordered table-striped">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Email</th>
+					<th>Twitter</th>
+					<th>&nbsp;</th>
+				</tr>
+			</thead>
+			<tbody>
+
+				<c:forEach items="${contactList}" var="contact">
+					<tr>
+						<td><a href="contacts/${contact.getField("id").value}">
+								${contact.getField("lastname").value},
+								${contact.getField("firstname").value} </a></td>
+						<td>${contact.getField("email").value}</td>
+						<td><a href="http://twitter.com/${contact.getField("twitterhandle__c").value}">${contact.getField("twitterhandle__c").value}</a></td>
+						<td><a href="#"
+							onClick="SFDC.deleteSObjectRecord(	'${contact.metadata.name}', 
+                            													'${contact.getField("
+							id").value}', 
+                            													'${contact.getField("firstname").value} ${contact.getField("lastname").value} ${contact.getField("twitterhandle__c").value }')"
                             		class="btn btn-danger btn-mini">Delete</a>
-                            	</form>
-                            </td>
-                        </tr>
-                    </c:forEach>
-                    
-                    </tbody>
-                </table>
-        </div>
-    </div>
-    
-    
-    <script type="text/javascript">
+							</form></td>
+					</tr>
+				</c:forEach>
+
+			</tbody>
+		</table>
+	</div>
+</div>
+
+
+<script type="text/javascript">
     var SFDC = {
         deleteSObjectRecord: function(type, id, name) {
             if (!confirm("Are you sure you want to delete '" +  name + "'?")) {
@@ -62,4 +59,4 @@
         }
     };
 </script>
-<jsp:include page="footer.jsp"/>
+<jsp:include page="footer.jsp" />
