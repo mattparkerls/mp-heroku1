@@ -27,7 +27,7 @@
 							onClick="SFDC.deleteSObjectRecord(	'${contact.metadata.name}', 
                             													'${contact.getField("
 							id").value}', 
-                            													'${contact.getField("firstname").value} ${contact.getField("lastname").value}')"
+                            													'${contact.getField("firstname").value}, ${contact.getField("lastname").value}')"
                             		class="btn btn-danger btn-mini">Delete</a>
 							</form></td>
 					</tr>
