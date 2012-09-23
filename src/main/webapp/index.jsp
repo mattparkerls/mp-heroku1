@@ -56,7 +56,7 @@
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
-          <a href="/" class="brand">Spring MVC and Salesforce.com Template</a>
+          <a href="/" class="brand">Matt Parker's Contact App</a>
           <!--
           IMPORTANT:
           This is Heroku specific markup. Remove to customize.
@@ -70,16 +70,13 @@
     <div class="container" id="getting-started">
       <div class="row">
         <div class="span8 offset2">
-          <h1 class="alert alert-success">Your app is ready!</h1>
           
          <div class="page-header">
-            <h1>Get started with your Spring MVC Application for Salesforce</h1>
+            <h1>Contacts</h1>
           </div>
           
           <div style="margin-bottom: 20px">
-            This is a template for a Spring MVC web application to work with data from Salesforce.
-            The sample code is a dynamic CRUD application that allows users to create, read, edit, and delete Contacts in their Salesforce Org.
-            To try it out go to the <a href="/sfdc/contacts">Contacts</a> page. Then use Eclipse or the Command Line to deploy some changes.
+            <a href="/sfdc/contacts">Contacts</a> page.
           </div>
  
           
