@@ -20,7 +20,7 @@ import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 
-//testing git branch//
+
 @Controller
 @RequestMapping("/contacts")
 public class ContactsController {
