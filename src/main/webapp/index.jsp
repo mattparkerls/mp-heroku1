@@ -3,7 +3,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Matt Parker's Contact App</title>
+    <title>MP's Contact Management App</title>
 
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -76,7 +76,7 @@
           </div>
           
           <div style="margin-bottom: 20px">
-            <a href="/sfdc/contacts">Contacts</a> page.
+            <a href="/sfdc/contacts">Manage Contacts</a> page.
           </div>
  
           
