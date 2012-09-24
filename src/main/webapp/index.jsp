@@ -3,7 +3,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>MP's Contact Management App</title>
+    <title>Matt Parker</title>
 
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -56,7 +56,7 @@
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
-          <a href="/" class="brand">Matt Parker's Contact App</a>
+          <a href="/" class="brand">Content Management App</a>
           <!--
           IMPORTANT:
           This is Heroku specific markup. Remove to customize.
