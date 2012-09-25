@@ -56,7 +56,7 @@
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
-          <a href="/" class="brand">Content Management App</a>
+          <a href="/" class="brand">Contact Management App</a>
           <!--
           IMPORTANT:
           This is Heroku specific markup. Remove to customize.
